@@ -1,5 +1,14 @@
 //const http = require("http");
+const url = require('url');
 const https = require("https");
+
+// get access to URLSearchParams object
+const search_params = current_url.searchParams;
+
+// get url parameters
+const id = search_params.get('id');
+const type = search_params.get('type');
+
 
 const Stream = require("stream").Transform;
 const fs = require("fs");
